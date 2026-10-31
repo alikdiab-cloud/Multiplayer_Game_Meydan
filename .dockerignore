@@ -1,0 +1,54 @@
+# The workspace parent contains the app in meydan/ plus local documents/caches.
+/README.md
+/docs/
+/.pnpm-store/
+/release/
+**/release/
+**/*.pdf
+
+# Credentials and local configuration.
+**/.env
+**/.env.*
+**/.envrc
+**/.npmrc
+**/.netrc
+**/.git-credentials
+**/*credential*
+**/*credentials*
+**/*secret*
+**/.aws/
+**/.ssh/
+**/.azure/
+**/.docker/
+**/.config/gcloud/
+**/credentials/
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/id_rsa*
+**/id_ed25519*
+
+# Git metadata, dependencies, and generated output.
+**/.git
+**/.git/**
+**/node_modules/
+**/dist/
+**/.vite/
+**/.cache/
+**/.vitest/
+**/coverage/
+**/test-results/
+**/playwright-report/
+**/blob-report/
+**/browser-artifacts/
+
+# Local release archives.
+**/*.zip
+**/*.tar
+**/*.tar.gz
+**/*.tar.xz
+**/*.tar.zst
+**/*.tgz
+**/*.7z
+**/*.rar

@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: meydan
+    runtime: docker
+    plan: free
+    numInstances: 1
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    dockerCommand: node dist/server/production.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: PUBLIC_ORIGIN
+        sync: false
